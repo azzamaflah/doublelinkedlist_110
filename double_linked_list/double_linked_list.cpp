@@ -6,7 +6,7 @@ class Node {
 public: 
 	int noMhs; 
 	string name; 
-	Node* next;
+	Node* next; 
 	Node* prev;
 };
 
@@ -20,4 +20,24 @@ public:
 	bool deleteNode(int rollNo);
 	bool listEmpty();
 	void traverse();
+	void revtraverse();
+	void hapus();
+	void searchData();
 };
+
+DoubleLinkedList::DoubleLinkedList() {
+	START = NULL;
+}
+
+void DoubleLinkedList::addNode() {
+	int nim;
+	string nm;
+	cout << "\nEnter the roll number of the student: ";
+	cin >> nim;
+	cout << "\nEnter the name of the student: ";
+	cin >> nm;
+	Node* newNode = new Node(); //step 1
+	newNode->noMhs = nim; // step 2
+	newNode->name = nm; // step 2
+
+}
