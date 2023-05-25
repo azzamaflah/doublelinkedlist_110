@@ -16,7 +16,7 @@ private:
 public:
 	DoubleLinkedList();
 	void addNode(); 
-	bool search(int rollNo, Node** previous, Node** current);
+	bool search(int rollNo, Node** previous, Node** current); 
 	bool deleteNode(int rollNo);
 	bool listEmpty();
 	void traverse();
@@ -25,7 +25,7 @@ public:
 	void searchData();
 };
 
-DoubleLinkedList::DoubleLinkedList() {
+DoubleLinkedList::DoubleLinkedList() { 
 	START = NULL;
 }
 
