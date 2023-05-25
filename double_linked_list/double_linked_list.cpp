@@ -3,7 +3,7 @@
 using namespace std;
 
 class Node { 
-public:
+public: 
 	int noMhs;
 	string name;
 	Node* next;
